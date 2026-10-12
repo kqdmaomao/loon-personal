@@ -1,0 +1,12 @@
+#!name=NodeSeek 自动签到
+#!desc=自用 NodeSeek 签到。首次登录后刷新首页获取凭证，手动验证成功后关闭 Cookie 获取。
+#!author=kqdmaomao
+#!homepage=https://github.com/kqdmaomao/loon-personal/tree/plugins
+
+[Script]
+http-request ^https:\/\/www\.nodeseek\.com\/(?:\?.*|(?:board|search)(?:[/?].*)?)?$ script-path=https://raw.githubusercontent.com/kqdmaomao/loon-personal/plugins/nodeseek_checkin.js, requires-body=false, timeout=10, tag=NodeSeek Cookie 获取, enable=true
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/kqdmaomao/loon-personal/plugins/nodeseek_checkin.js, timeout=35, argument="random=true", tag=NodeSeek 每日签到, enable=true
+generic script-path=https://raw.githubusercontent.com/kqdmaomao/loon-personal/plugins/nodeseek_checkin.js, timeout=35, argument="random=true", tag=NodeSeek 手动签到, enable=true
+
+[Mitm]
+hostname = www.nodeseek.com
