@@ -1,0 +1,6 @@
+# Personal US rules; select the existing 美国 policy in Loon.
+DOMAIN-KEYWORD,younoair.de
+DOMAIN-KEYWORD,lite.liminalnet.com
+DOMAIN-KEYWORD,lite.cn2gias.uk
+DOMAIN-SUFFIX,api.199347.xyz
+DOMAIN-SUFFIX,nodeseek.com

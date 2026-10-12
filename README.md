@@ -14,3 +14,22 @@
 原手机配置已包含 `DOMAIN-SUFFIX,nodeseek.com,美国`；已有此规则时无需再重复添加。
 
 `NodeSeek_example.conf` 只是一段配置参考，不是完整手机配置，不应直接替代现有配置。远程规则和插件可以分别添加；插件本身不强制改变已有分流。
+
+## 自用本地规则迁移
+
+按 2026-10-12 手机截图保留 7 条规则的原匹配类型，按策略分成两个订阅：
+
+| 文件 | 条数 | 在 Loon 中选择的策略 |
+|---|---:|---|
+| [Personal_DIRECT.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_DIRECT.lsr) | 2 | DIRECT |
+| [Personal_US.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_US.lsr) | 5 | 美国（现有策略组） |
+
+DIRECT：`DOMAIN-KEYWORD,luxshare`、`DOMAIN-KEYWORD,emby.789256.xyz`。
+
+美国：`DOMAIN-KEYWORD,younoair.de`、`DOMAIN-KEYWORD,lite.liminalnet.com`、`DOMAIN-KEYWORD,lite.cn2gias.uk`、`DOMAIN-SUFFIX,api.199347.xyz`、`DOMAIN-SUFFIX,nodeseek.com`。
+
+在 Loon 的订阅规则入口分别添加两个 Raw 链接，设置上表对应策略，并将这两份自用订阅置于其它规则订阅之前。`Personal_US.lsr` 已包含 NodeSeek，无需再重复添加单独的 `NodeSeek.lsr`。
+
+上传只是备份和提供订阅文件，不会自动修改手机的本地规则。迁移前先备份原配置；保留本地规则时本地规则仍优先，不能据此验证订阅是否命中。确认文件下载、策略设置正确后，如要迁移，再删除对应的 7 条本地规则，并在请求详情中核对实际命中的规则和策略；异常时恢复本地规则。
+
+[官方匹配优先级](https://nsloon.app/docs/Rule/)为：本地规则 > 插件规则 > 订阅规则。因此搬为订阅后相对插件的优先级会改变；把订阅排在最上面也不能超过插件。若需要严格保留原优先级，可仅将这里作为备份，继续使用手机本地规则。
