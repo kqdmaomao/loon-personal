@@ -23,10 +23,13 @@
 |---|---:|---|
 | [Personal_DIRECT.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_DIRECT.lsr) | 30 | DIRECT |
 | [Personal_US.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_US.lsr) | 5 | 美国（现有策略组） |
+| [Personal_DE.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_DE.lsr) | 7 | 德国（现有策略组） |
 
 DIRECT：`DOMAIN-KEYWORD,luxshare`、`DOMAIN-KEYWORD,emby.789256.xyz`，另加香港银行 App 相关域名 26 条直连（汇丰、恒生、中银香港、渣打、星展、花旗、东亚、工银亚洲、建行亚洲、招商永隆、富邦、大新、信银国际、OCBC、ZA Bank、WeLab、livi、天星、Mox、蚂蚁银行、iFAST、Wise），以及兴业银行 2 条（cib.com.cn、95561.com.cn），域名清单见文件内按银行分组的注释。
 
 美国：`DOMAIN-KEYWORD,younoair.de`、`DOMAIN-KEYWORD,lite.liminalnet.com`、`DOMAIN-KEYWORD,lite.cn2gias.uk`、`DOMAIN-SUFFIX,api.199347.xyz`、`DOMAIN-SUFFIX,nodeseek.com`。
+
+德国：Bybit App 相关域名 7 条（`bybit.com`、`bytick.com`、`byhkbit.com`、`bybit-tr.com`、`bybit.kz`、`bybit.nl`、`bybit.id`）。
 
 在 Loon 的订阅规则入口分别添加两个 Raw 链接，设置上表对应策略，并将这两份自用订阅置于其它规则订阅之前。`Personal_US.lsr` 已包含 NodeSeek，无需再重复添加单独的 `NodeSeek.lsr`。
 
