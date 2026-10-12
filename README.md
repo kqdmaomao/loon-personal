@@ -21,10 +21,10 @@
 
 | 文件 | 条数 | 在 Loon 中选择的策略 |
 |---|---:|---|
-| [Personal_DIRECT.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_DIRECT.lsr) | 28 | DIRECT |
+| [Personal_DIRECT.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_DIRECT.lsr) | 30 | DIRECT |
 | [Personal_US.lsr](https://raw.githubusercontent.com/kqdmaomao/loon-personal/rules/Personal_US.lsr) | 5 | 美国（现有策略组） |
 
-DIRECT：`DOMAIN-KEYWORD,luxshare`、`DOMAIN-KEYWORD,emby.789256.xyz`，另加香港银行 App 相关域名 26 条直连（汇丰、恒生、中银香港、渣打、星展、花旗、东亚、工银亚洲、建行亚洲、招商永隆、富邦、大新、信银国际、OCBC、ZA Bank、WeLab、livi、天星、Mox、蚂蚁银行、iFAST、Wise），域名清单见文件内按银行分组的注释。
+DIRECT：`DOMAIN-KEYWORD,luxshare`、`DOMAIN-KEYWORD,emby.789256.xyz`，另加香港银行 App 相关域名 26 条直连（汇丰、恒生、中银香港、渣打、星展、花旗、东亚、工银亚洲、建行亚洲、招商永隆、富邦、大新、信银国际、OCBC、ZA Bank、WeLab、livi、天星、Mox、蚂蚁银行、iFAST、Wise），以及兴业银行 2 条（cib.com.cn、95561.com.cn），域名清单见文件内按银行分组的注释。
 
 美国：`DOMAIN-KEYWORD,younoair.de`、`DOMAIN-KEYWORD,lite.liminalnet.com`、`DOMAIN-KEYWORD,lite.cn2gias.uk`、`DOMAIN-SUFFIX,api.199347.xyz`、`DOMAIN-SUFFIX,nodeseek.com`。
 

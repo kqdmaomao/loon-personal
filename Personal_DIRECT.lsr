@@ -51,3 +51,8 @@ DOMAIN-SUFFIX,antbank.hk
 DOMAIN-SUFFIX,ifastgb.com
 # Wise
 DOMAIN-SUFFIX,wise.com
+
+# Mainland banking apps go DIRECT (test with Industrial Bank).
+# Industrial Bank / 兴业银行
+DOMAIN-SUFFIX,cib.com.cn
+DOMAIN-SUFFIX,95561.com.cn
