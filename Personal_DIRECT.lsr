@@ -1,3 +1,53 @@
 # Personal direct rules; select DIRECT in Loon.
 DOMAIN-KEYWORD,luxshare
 DOMAIN-KEYWORD,emby.789256.xyz
+
+# Hong Kong banking apps go DIRECT (proxies often trigger risk control).
+# HSBC Hong Kong
+DOMAIN-SUFFIX,hsbc.com.hk
+# Hang Seng Bank
+DOMAIN-SUFFIX,hangseng.com
+# Bank of China (Hong Kong)
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,boc.com.hk
+# Standard Chartered Hong Kong
+DOMAIN-SUFFIX,sc.com
+# DBS Hong Kong
+DOMAIN-SUFFIX,dbs.com
+# Citibank Hong Kong
+DOMAIN-SUFFIX,citibank.com.hk
+# Bank of East Asia
+DOMAIN-SUFFIX,hkbea.com
+# ICBC (Asia)
+DOMAIN-SUFFIX,icbcasia.com
+# China Construction Bank (Asia)
+DOMAIN-SUFFIX,asia.ccb.com
+# CMB Wing Lung Bank
+DOMAIN-SUFFIX,winglungbank.com
+# Fubon Bank (Hong Kong)
+DOMAIN-SUFFIX,fubonbank.com.hk
+# Dah Sing Bank
+DOMAIN-SUFFIX,dahsing.com
+# CITIC Bank International
+DOMAIN-SUFFIX,cncbinternational.com
+# OCBC Hong Kong
+DOMAIN-SUFFIX,ocbc.com
+# ZA Bank
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zafinsvc.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zaticdn.com
+# WeLab Bank
+DOMAIN-SUFFIX,welab.bank
+# livi bank
+DOMAIN-SUFFIX,livibank.com
+# Airstar Bank
+DOMAIN-SUFFIX,airstarbank.com
+# Mox Bank
+DOMAIN-SUFFIX,mox.com
+# Ant Bank
+DOMAIN-SUFFIX,antbank.hk
+# iFAST Global Bank
+DOMAIN-SUFFIX,ifastgb.com
+# Wise
+DOMAIN-SUFFIX,wise.com
