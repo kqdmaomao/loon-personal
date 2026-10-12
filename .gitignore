@@ -1,0 +1,10 @@
+*.lcf
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+*cookie*.txt
+*Cookie*.txt
+secrets/
