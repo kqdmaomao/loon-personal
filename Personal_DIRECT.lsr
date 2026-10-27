@@ -56,3 +56,9 @@ DOMAIN-SUFFIX,wise.com
 # Industrial Bank / 兴业银行
 DOMAIN-SUFFIX,cib.com.cn
 DOMAIN-SUFFIX,95561.com.cn
+
+# Mainland securities apps go DIRECT.
+# China Galaxy Securities / 银河证券
+DOMAIN-SUFFIX,chinastock.com.cn
+# Tonghuashun / 同花顺
+DOMAIN-SUFFIX,10jqka.com.cn
